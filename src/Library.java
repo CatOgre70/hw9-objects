@@ -15,9 +15,9 @@ public class Library {
     }
 
     public Book findBookByName(String name){
-        for(int i = 0; i < this.bookArray.length; i++){
-            if(this.bookArray[i] != null && this.bookArray[i].getName().equals(name))
-                return this.bookArray[i];
+        for (Book book : this.bookArray) {
+            if (book != null && book.getName().equals(name))
+                return book;
         }
         return null;
     }

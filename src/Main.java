@@ -54,7 +54,11 @@ public class Main {
         lib.findAndPrintBookByName("Малая энциклопедия Интернет-монстров");
         lib.changeBookPubYear("Средняя энциклопедия Интернет-монстров", 2076);
         lib.findAndPrintBookByName("Средняя энциклопедия Интернет-монстров");
-        System.out.println();
+        System.out.println("\n");
+
+        // Final Library state
+        lib.print();
+
     }
 
     public static int lookingForFreeIndex(Book[] bArray){
