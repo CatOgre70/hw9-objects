@@ -52,7 +52,7 @@ public class Library {
     public void print(){
         for(int i = 0; i < this.bookArray.length; i++){
             if(this.bookArray[i] != null){
-                System.out.println("Книга в каталоге с номером " + i +": " + this.bookArray[i]);
+                System.out.println("Книга в библиотеке с номером " + i +": " + this.bookArray[i]);
             }
         }
     }

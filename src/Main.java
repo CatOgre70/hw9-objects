@@ -57,6 +57,7 @@ public class Main {
         System.out.println("\n");
 
         // Final Library state
+        System.out.println("Финальное состояние нашей библиотеки:");
         lib.print();
 
     }
