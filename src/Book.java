@@ -42,5 +42,8 @@ public class Book {
     public String toString(){
         return "[" + this.name + ". " + this.author.toString() + ". " + this.pubYear + "]";
     }
-
+    public void print(){
+        System.out.print(this.name + " за авторством " + this.author.getName() + " " + this.author.getSecondName()
+                + " была опубликована в " + this.pubYear + " году");
+    }
 }
