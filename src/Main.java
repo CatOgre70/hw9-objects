@@ -59,6 +59,38 @@ public class Main {
         // Final Library state
         System.out.println("Финальное состояние нашей библиотеки:");
         lib.print();
+        System.out.println();
+
+        // Part 3. Homework #10. Mandatory tasks. Methods with contract
+
+        Author auth3 = new Author("Одноглаз", "Безруков");
+
+        if(auth3.equals(book3.getAuthor())){
+            System.out.println("Автор \"" + auth3 + "\" уже есть в библиотеке");
+        } else {
+            System.out.println("Автор \"" + auth3 + "\" может быть добавлен в библиотеку");
+        }
+
+        if(auth3.hashCode() == book3.getAuthor().hashCode()){
+            System.out.println("Похоже, что автор \"" + auth3 + "\" уже есть в библиотеке");
+        } else {
+            System.out.println("Выглядит так, что автор \"" + auth3 + "\" может быть добавлен в библиотеку");
+        }
+
+        book4 = new Book("Средняя энциклопедия Интернет-монстров", "Одноглаз",
+                "Безруков", 2077);
+
+        if(book4.equals(book3)){
+            System.out.println("Книга " + book4 + " уже есть в библиотеке");
+        } else {
+            System.out.println("Книгу " + book4 + " можно добавить в библиотеку");
+        }
+
+        if(book4.hashCode() == book3.hashCode()){
+            System.out.println("Похоже, чсто книга " + book4 + " уже есть в библиотеке");
+        } else {
+            System.out.println("Выгладит так, что книгу " + book4 + " можно добавить в библиотеку");
+        }
 
     }
 
