@@ -91,6 +91,7 @@ public class Main {
         } else {
             System.out.println("Выгладит так, что книгу " + book4 + " можно добавить в библиотеку");
         }
+        System.out.println();
 
         // Test code from difficult tasks
 
