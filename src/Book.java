@@ -54,10 +54,7 @@ public class Book {
             return false;
         }
         Book book1 = (Book) book;
-        if(this.getAuthor().equals(book1.getAuthor()) && this.getName().equals(book1.getName()) && this.getPubYear() == book1.getPubYear()){
-            return true;
-        }
-        return false;
+        return this.author.equals(book1.getAuthor()) && this.name.equals(book1.getName()) && this.pubYear == book1.getPubYear();
     }
 
     public int hashCode(){

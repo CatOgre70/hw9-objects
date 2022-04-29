@@ -34,13 +34,7 @@ public class Author {
             return false;
         }
         Author author1 = (Author) author;
-        if(!this.getName().equals(author1.getName())){
-            return false;
-        }
-        if(!this.getSecondName().equals(author1.getSecondName())){
-            return false;
-        }
-        return true;
+        return this.secondName.equals(author1.getSecondName()) && this.name.equals(author1.getName());
     }
 
     public int hashCode(){
