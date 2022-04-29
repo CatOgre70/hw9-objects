@@ -1,5 +1,5 @@
 public class Library {
-    private Book[] bookArray;
+    private final Book[] bookArray;
 
     public Library(int libSize){
         this.bookArray = new Book[libSize];
@@ -55,6 +55,19 @@ public class Library {
                 System.out.println("Книга в библиотеке с номером " + i +": " + this.bookArray[i]);
             }
         }
+    }
+
+    public String toString(){
+        StringBuilder str = new StringBuilder();
+        for(int i = 0; i < bookArray.length - 1; i++){
+            if(bookArray[i] != null){
+                str.append(bookArray[i].toString());
+                str.append("\n");
+            }
+        }
+        if(bookArray[bookArray.length-1] != null)
+            str.append(bookArray[bookArray.length-1].toString());
+        return str.toString();
     }
 
 }
